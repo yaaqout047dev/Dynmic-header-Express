@@ -44,13 +44,8 @@ app.get('/service',(req,res)=>{
 
 
 app.get('*',(req,res)=>{
-  res.render('404',{
-    title: "Service Page Content"
-  })
+  res.render('404')
 })
-// app.get('*' , (req , res)=> {          
-//   res.send('404 page not found ')
-// })
 
 
 
