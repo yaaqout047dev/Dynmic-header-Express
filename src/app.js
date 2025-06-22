@@ -43,9 +43,17 @@ app.get('/service',(req,res)=>{
 })
 
 
+app.get('*',(req,res)=>{
+  res.render('404',{
+    title: "Service Page Content"
+  })
+})
+// app.get('*' , (req , res)=> {          
+//   res.send('404 page not found ')
+// })
 
 
 
 app.listen(port , ()=> {                          
-  console.log(`app is listening on port ${port}`)     
+  console.log(`Example app listening at http://localhost:${port}`)     
   })
